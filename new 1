@@ -1,0 +1,30 @@
+public void ReadFile(string path)
+        {
+            string[] Noidungfile;
+            string[] Noidungline;
+            string English, Vietnamese, Exam;
+            Noidungfile = File.ReadAllLines(path);
+            if (Noidungfile != null)
+            {
+                int N = Noidungfile.Length;
+                for (int i = 0; i < N; i++)
+                {
+                    Noidungline = Noidungfile[i].Split(';');
+                    English = Noidungline[0].Trim();
+                    Vietnamese = Noidungline[1].Trim();
+                    Exam = Noidungline[2].Trim();
+                    D.Add(new Dic { EWord = English, VWord = Vietnamese, Example = Exam });
+                }
+            }
+        }
+16:34
+Console.WriteLine("Please insert a Lecturer's ID: ");
+            String lecId2 = Console.ReadLine();
+            for(int i = 0; i<list.LongCount(); i++)
+            {
+                if(lecId2.Equals( true)
+                {
+                    int index = list[];
+
+                }
+            }
